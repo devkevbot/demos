@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <h1>Image Gallery</h1>
+    <div id="image-gallery">
+      <div id="image-container" class="image__container">
+        <div class="image__card">
+          <picture>
+            <source media="(max-width: 650px)" srcset="https://placekitten.com/350/300" width="350" height="300" />
+            <img src="https://placekitten.com/600/300" width="600" height="300" alt="A cute kitten" />
+          </picture>
+        </div>
+        <div class="image__card">
+          <picture>
+            <source media="(max-width: 650px)" srcset="https://placekitten.com/350/300" width="350" height="300" />
+            <img src="https://placekitten.com/600/300" width="600" height="300" alt="A cute kitten" />
+          </picture>
+        </div>
+        <div class="image__card">
+          <picture>
+            <source media="(max-width: 650px)" srcset="https://placekitten.com/350/300" width="350" height="300" />
+            <img src="https://placekitten.com/600/300" width="600" height="300" alt="A cute kitten" />
+          </picture>
+        </div>
+      </div>
+      <div id="gallery-controls">
+        <button id="left-arrow" class="arrow" type="button">&LeftArrow;</button>
+        <button id="right-arrow" class="arrow" type="button">&RightArrow;</button>
+      </div>
+    </div>
+  </body>
+</html>

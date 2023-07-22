@@ -11,4 +11,8 @@ export default [
     title: "DOM Event Visualizer",
     folderName: "event-visualizer",
   },
+  {
+    title: "Image Gallery",
+    folderName: "image-gallery",
+  },
 ];
