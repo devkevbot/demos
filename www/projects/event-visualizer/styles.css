@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  background-color: black;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+#outer {
+  background-color: coral;
+  padding: 8rem;
+  grid-row: 1 / span 1;
+  cursor: pointer;
+}
+
+#inner {
+  background-color: skyblue;
+  padding: 4rem;
+}
+
+#outer,
+#inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#button {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: lightgreen;
+  border: 2px solid black;
+}
+
+#button:hover {
+  background-color: green;
+}
+
+#eventLog {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+#clearEventLog {
+  width: fit-content;
+  color: black;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#logItems {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: slategray;
+  height: 500px;
+  overflow-y: scroll;
+  font-size: 2rem;
+  list-style-position: inside;
+  padding: 4rem 2rem;
+}
+
+#controlPanel {
+  background-color: darkgray;
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+#controlGroups {
+  display: flex;
+  gap: 2rem;
+}
+
+fieldset {
+  padding: 0.5rem;
+  width: fit-content;
+}
+
+fieldset label {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}

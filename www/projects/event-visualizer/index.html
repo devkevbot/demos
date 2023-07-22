@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="./script.js"></script>
+    <title>Event Visualizer</title>
+  </head>
+  <body>
+    <div id="root">
+      <div id="outer">
+        <span>Outer</span>
+        <div id="inner">
+          <span>Inner</span>
+          <button id="button">Button</button>
+        </div>
+      </div>
+      <div id="controlPanel">
+        <h2>Controls</h2>
+        <div id="controlGroups">
+          <fieldset id="captureGroup">
+            <legend>Capture settings</legend>
+            <label>
+              Capture outer
+              <input type="checkbox" id="outerCapture" />
+            </label>
+            <label>
+              Capture inner
+              <input type="checkbox" id="innerCapture" />
+            </label>
+            <label>
+              Capture button
+              <input type="checkbox" id="buttonCapture" />
+            </label>
+          </fieldset>
+          <fieldset id="propagationGroup">
+            <legend>Propagation settings</legend>
+            <label>
+              Propagate outer
+              <input type="checkbox" id="outerPropagation" checked />
+            </label>
+            <label>
+              Propagate inner
+              <input type="checkbox" id="innerPropagation" checked />
+            </label>
+            <label>
+              Propagate button
+              <input type="checkbox" id="buttonPropagation" checked />
+            </label>
+          </fieldset>
+        </div>
+      </div>
+      <div id="eventLog">
+        <h2>Event Log</h2>
+        <button id="clearEventLog" type="button">Clear event log</button>
+        <ol id="logItems"></ol>
+      </div>
+    </div>
+  </body>
+</html>

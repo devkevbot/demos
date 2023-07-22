@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+label {
+  align-self: flex-end;
+  font-size: 2rem;
+}
+
+#input {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+}
+
+#suggestions {
+  width: 100%;
+  max-height: 250px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  list-style: none;
+  border: 1px solid black;
+  scroll-padding-block: 3rem;
+}
+
+#suggestions:empty {
+  border: 1px solid transparent;
+}
+
+#suggestions::-webkit-scrollbar {
+  display: none;
+}
+
+.suggestion {
+  padding: 0.5rem 1rem;
+}
+
+.suggestion {
+  border-bottom: 1px solid black;
+}
+
+.suggestion:focus-visible {
+  outline-offset: -0.25rem;
+}
+
+.suggestion:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.active {
+  background-color: lightgrey;
+}
