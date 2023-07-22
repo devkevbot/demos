@@ -1,0 +1,32 @@
+{
+  "name": "demos",
+  "version": "1.0.0",
+  "description": "A collection of visual web demos.",
+  "private": true,
+  "engines": {
+    "node": "18"
+  },
+  "type": "module",
+  "scripts": {
+    "format": "prettier \"**/*\" --ignore-unknown",
+    "format:write": "pnpm format --write",
+    "lint": "eslint . .*js --max-warnings 0 --report-unused-disable-directives",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "javascript",
+    "demo"
+  ],
+  "author": "devkevbot",
+  "license": "MIT",
+  "lint-staged": {
+    "*": "prettier --ignore-unknown --write"
+  },
+  "devDependencies": {
+    "eslint": "8.45.0",
+    "eslint-config-prettier": "8.8.0",
+    "husky": "8.0.3",
+    "lint-staged": "13.2.3",
+    "prettier": "3.0.0"
+  }
+}
