@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div id="root">
+      <form id="question-1">
+        <fieldset>
+          <legend>Which part of web development is concerned with styling web pages?</legend>
+
+          <div>
+            <input id="html" type="radio" value="html" name="question-1" required />
+            <label for="html">HTML</label>
+          </div>
+
+          <div>
+            <input id="css" type="radio" value="css" name="question-1" required />
+            <label for="css">CSS</label>
+          </div>
+
+          <div>
+            <input id="javascript" type="radio" value="javascript" name="question-1" required />
+            <label for="javascript">JavaScript</label>
+          </div>
+          <button type="submit">Submit answer</button>
+          <span id="result-field" aria-live="polite"></span>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

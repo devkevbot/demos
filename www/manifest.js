@@ -23,4 +23,8 @@ export default [
     title: "Solar System",
     folderName: "solar-system",
   },
+  {
+    title: "Quiz",
+    folderName: "quiz",
+  },
 ];
