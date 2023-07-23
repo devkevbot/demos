@@ -1,0 +1,100 @@
+@import url("../reset.css");
+
+:root {
+  --pig-color: #ffc0cb;
+}
+
+html {
+  background-color: beige;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  display: grid;
+  place-content: center;
+}
+
+.head {
+  aspect-ratio: 1;
+  width: 200px;
+  margin-top: 20px;
+  background-color: var(--pig-color);
+  border-radius: 50%;
+  position: relative;
+  border: 5px solid black;
+}
+
+.ear {
+  aspect-ratio: 1;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--pig-color);
+  position: absolute;
+  top: -10px;
+  border: 5px solid black;
+  z-index: -11;
+}
+
+.ear:first-of-type {
+  left: 10px;
+}
+
+.ear:last-of-type {
+  right: 10px;
+}
+
+.eye {
+  aspect-ratio: 1;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 40px;
+  border: 2px solid black;
+}
+
+.eye:first-of-type {
+  left: 30px;
+}
+
+.eye:last-of-type {
+  right: 30px;
+}
+
+.pupil {
+  aspect-ratio: 1;
+  width: 25px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nose {
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  border-radius: 35%;
+  background-color: #f57187;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.nostril {
+  width: 25%;
+  height: 50%;
+  background-color: black;
+  border-radius: 50%;
+}

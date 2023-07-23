@@ -20,6 +20,10 @@ export default [
     folderName: "image-gallery",
   },
   {
+    title: "Piggy",
+    folderName: "piggy",
+  },
+  {
     title: "Solar System",
     folderName: "solar-system",
   },
