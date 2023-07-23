@@ -1,0 +1,42 @@
+@import url("../reset.css");
+
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  background-color: wheat;
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+}
+
+#sun {
+  background-color: orange;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.planet {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  translate: calc(cos(var(--angle)) * var(--orbit-radius) + var(--center-offset))
+    calc(sin(var(--angle)) * var(--orbit-radius) + var(--center-offset));
+}
+
+#venus {
+  --orbit-radius: 200px;
+  --center-offset: 25px;
+  background-color: chocolate;
+  width: 100px;
+}
+
+#mercury {
+  --orbit-radius: 400px;
+  --center-offset: 35px;
+  background-color: brown;
+  width: 80px;
+}

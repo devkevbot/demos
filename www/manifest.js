@@ -15,4 +15,8 @@ export default [
     title: "Image Gallery",
     folderName: "image-gallery",
   },
+  {
+    title: "Solar System",
+    folderName: "solar-system",
+  },
 ];
