@@ -1,0 +1,25 @@
+@import url("../reset.css");
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  font-family: monospace;
+  background-color: gray;
+  display: grid;
+  place-content: center;
+}
+
+#text {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+  text-align: center;
+}

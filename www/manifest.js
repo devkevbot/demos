@@ -12,6 +12,10 @@ export default [
     folderName: "event-visualizer",
   },
   {
+    title: "Glitch Text",
+    folderName: "glitch-text",
+  },
+  {
     title: "Image Gallery",
     folderName: "image-gallery",
   },
