@@ -44,13 +44,13 @@ body {
 }
 
 #hours::before {
-  content: "HH:";
+  content: "";
 }
 
 #minutes::before {
-  content: "MM:";
+  content: "";
 }
 
 #seconds::before {
-  content: "SS:";
+  content: "";
 }
