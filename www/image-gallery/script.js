@@ -6,8 +6,21 @@ let currIndex = Math.floor(imageContainer.childElementCount / 2);
 
 imageContainer.children[currIndex].scrollIntoView();
 
+window.addEventListener("keyup", (event) => {
+  if (event.key === "ArrowLeft") {
+    moveLeft();
+  } else if (event.key === "ArrowRight") {
+    moveRight();
+  }
+});
+
 const leftArrow = document.getElementById("left-arrow");
-leftArrow.addEventListener("click", () => {
+const rightArrow = document.getElementById("right-arrow");
+
+leftArrow.addEventListener("click", moveLeft);
+rightArrow.addEventListener("click", moveRight);
+
+function moveLeft() {
   rightArrow.removeAttribute("disabled");
 
   if (currIndex > minIndex) {
@@ -18,10 +31,9 @@ leftArrow.addEventListener("click", () => {
   if (currIndex === minIndex) {
     leftArrow.setAttribute("disabled", "true");
   }
-});
+}
 
-const rightArrow = document.getElementById("right-arrow");
-rightArrow.addEventListener("click", () => {
+function moveRight() {
   leftArrow.removeAttribute("disabled");
 
   if (currIndex < maxIndex) {
@@ -32,4 +44,4 @@ rightArrow.addEventListener("click", () => {
   if (currIndex === maxIndex) {
     rightArrow.setAttribute("disabled", "true");
   }
-});
+}
