@@ -10,7 +10,7 @@ body,
   display: grid;
   place-content: center;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: gainsboro;
+  background-color: darkcyan;
 }
 
 fieldset {
@@ -21,13 +21,16 @@ fieldset {
   gap: 0.5rem;
 
   padding: 1rem 2rem;
-  background-color: wheat;
-  background-color: wheat;
+  background-color: lightblue;
+  border-radius: 1rem;
+  border: 1px solid lightblue;
 }
 
 legend {
   font-weight: bold;
   font-size: 1.5rem;
+  color: white;
+  text-shadow: black 2px 2px;
 }
 
 label {
