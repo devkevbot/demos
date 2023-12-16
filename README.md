@@ -1,6 +1,6 @@
 # demos
 
-An assortment of micro-demos for different web capabilities.
+An assortment of micro-demos showcasing different web capabilities.
 
 ## Adding a new demo
 
