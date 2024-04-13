@@ -1,6 +1,6 @@
 # demos
 
-An assortment of micro-demos showcasing different web capabilities using only HTML, CSS, and Vanilla JavaScript. Try out the demos [here.](https://demo.kevinjero.me/)
+An assortment of micro-demos showcasing different web capabilities using only HTML, CSS, and Vanilla JavaScript.
 
 ## Examples
 
