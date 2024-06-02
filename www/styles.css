@@ -10,9 +10,10 @@ html {
 
 body {
   background-color: rgb(226, 232, 240);
+  padding: 32px;
+
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 html,
@@ -48,9 +49,9 @@ h1 {
 }
 
 .card__container {
-  overflow-y: auto;
-  max-height: 500px;
-  padding-inline: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
 .card__item {
@@ -60,7 +61,6 @@ h1 {
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  border-bottom: 1px solid black;
 }
 
 .card__item:hover {

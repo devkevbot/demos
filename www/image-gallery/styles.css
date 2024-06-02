@@ -115,20 +115,31 @@ h1 {
 
 .image__card::after {
   position: absolute;
-  top: 50%;
+  bottom: 10px;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   content: "Image " counter(images);
-  font-size: 4rem;
+  font-size: 2rem;
   text-shadow: 2px 2px 2px black;
   text-transform: uppercase;
 }
 
 #gallery-controls {
+  position: relative;
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+
+#control-hint {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  padding: 1rem 0.5rem;
+  color: white;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 650px) {
@@ -147,5 +158,10 @@ h1 {
 
   .arrow {
     font-size: 3rem;
+    transform: rotate(90deg);
+  }
+
+  #control-hint {
+    display: none;
   }
 }
