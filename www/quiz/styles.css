@@ -3,14 +3,21 @@
 html,
 body,
 #root {
-  height: 100%;
+  min-height: 100%;
 }
 
 #root {
-  display: grid;
-  place-content: center;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   background-color: darkcyan;
+}
+
+form {
+  width: 80%;
+  margin-inline: auto;
 }
 
 fieldset {
@@ -37,7 +44,7 @@ label {
   font-size: 1.25rem;
 }
 
-#result-field {
+.answer {
   width: 100%;
 }
 
