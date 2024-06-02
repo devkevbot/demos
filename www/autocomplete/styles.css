@@ -23,11 +23,9 @@ body,
 }
 
 #root {
-  display: grid;
-  justify-content: center;
-  grid-template-rows: repeat(2, 1fr);
-  gap: 0.5rem;
-  padding: 2rem;
+  padding: 32px;
+  max-width: 50%;
+  margin-inline: auto;
 }
 
 label {
