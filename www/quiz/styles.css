@@ -1,5 +1,9 @@
 @import url("../reset.css");
 
+html {
+  background-color: darkcyan;
+}
+
 html,
 body,
 #root {
@@ -12,7 +16,6 @@ body,
   flex-direction: column;
   gap: 1rem;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: darkcyan;
 }
 
 form {
