@@ -82,7 +82,7 @@ function handleClickOuter(event) {
   if (!useOuterPropagation) {
     const li = createEventLogItem(
       `propagation stopped by outer in ${eventPhaseToName(event.eventPhase)} phase`,
-      "magenta",
+      "pink",
       {
         addSeparator: true,
       }
@@ -110,7 +110,7 @@ function handleClickInner(event) {
   if (!useInnerPropagation) {
     const li = createEventLogItem(
       `propagation stopped by inner in ${eventPhaseToName(event.eventPhase)} phase`,
-      "magenta",
+      "pink",
       {
         addSeparator: true,
       }
@@ -133,7 +133,7 @@ function handleClickButton(event) {
   if (!useButtonPropagation) {
     const li = createEventLogItem(
       `propagation stopped by button in ${eventPhaseToName(event.eventPhase)} phase`,
-      "magenta",
+      "pink",
       {
         addSeparator: true,
       }

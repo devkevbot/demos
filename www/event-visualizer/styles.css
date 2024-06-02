@@ -22,6 +22,7 @@ body {
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
   font-size: 2rem;
+  padding: 32px;
 }
 
 #outer {
